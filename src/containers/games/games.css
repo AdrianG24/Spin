@@ -1,0 +1,49 @@
+.spinach__games {
+    display: flex;
+    flex-direction: column;    
+}
+
+.spinach__games-heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.spinach__games-heading h1 {
+    font-size: 62px;
+    line-height: 75px;
+    font-family: var(--font-family);
+    font-weight: 800;
+}
+
+.spinach__games-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+
+@media screen and (max-width: 990px) {
+    .spinach__games-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .spinach__games-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .spinach__games-heading h1 {
+        font-size: 46px;
+        line-height: 52px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .spinach__games-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+}

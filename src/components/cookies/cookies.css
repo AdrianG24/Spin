@@ -1,0 +1,107 @@
+/* CSS for CookieConsent component */
+.cookie-consent {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid var(--color-subbg);
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .cookie-consent p {
+    margin: 0;
+  }
+  
+  .cookie-consent button {
+    padding: 8px 16px;
+    background: var(--gradient-text);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cookie-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  @media screen and (max-width: 950px) {
+    .cookie-consent {
+      font-size: 14px;
+    }
+    .cookie-consent button {
+        font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .cookie-consent {
+      font-size: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .cookie-consent button {
+      padding: 3px 6px;
+      font-size: 12px;
+    }
+  }
+  
+  .ReactModal__Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ReactModal__Content {
+    position: relative;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    max-width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ReactModal__Content h2 {
+    margin-top: 0;
+  }
+  
+  .ReactModal__Content p {
+    margin: 0 0 10px;
+  }
+  
+  .ReactModal__Content button {
+    padding: 6px 12px;
+    background: var(--gradient-text);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .ReactModal__Content button:hover {
+    background-color: #45a049;
+  }
+  
+  .ReactModal__Content button:focus {
+    outline: none;
+  }
+  

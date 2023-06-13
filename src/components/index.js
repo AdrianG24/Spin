@@ -1,0 +1,7 @@
+export {default as Article} from './article/Article'
+export {default as GameArticles} from './gameArticles/GameArticles'
+export {default as Brand} from './brand/Brand'
+export {default as Feature} from './feature/Feature'
+export {default as Navbar} from './navbar/Navbar'
+export {default as CookieConsent} from './cookies/Cookies'
+export {default as Confirmation} from './confirmation/Confirmation'

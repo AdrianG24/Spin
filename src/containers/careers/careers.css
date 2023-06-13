@@ -1,0 +1,138 @@
+.spinach__career {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2rem;
+}
+
+.spinach__career-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    border: 1px solid var(--color-subbg);
+    text-align: center;
+
+    margin-bottom: 100px;
+    margin-top: 60px;
+    cursor: pointer;
+    color: var(--color-subbg);
+    font-family: var(--font-family);
+}
+
+.spinach__career-career h1 {
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.spinach__career-career {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spinach__career-career .spinach__careers-container__career {
+    margin: 0;
+}
+
+.spinach__career-career .spinach__careers-container_career-text {
+    max-width: 700px;
+}
+
+.spinach__career-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 4rem 0 2rem;
+}
+
+.spinach__career-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    max-width: 510px;
+}
+
+.spinach__career-heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.spinach__career-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+.spinach__career-container .spinach__careers-container__career {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spinach__career-container .spinach__careers-container_career-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .spinach__career-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .spinach__career-heading p {
+        margin-top: 1rem;
+    }
+    .spinach__career-career {
+        margin-left: 0;
+    }
+    .spinach__career{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .spinach__career-career .spinach__careers-container__career {
+        flex-direction: column;
+    }
+
+    .spinach__career-career .spinach__careers-container_career-text {
+        margin-top: 0.5rem;
+    }
+
+    .spinach__career-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .spinach__career-career h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .spinach__about-container .spinach__careers-container__career {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+    .spinach__career-career h1 {
+        font-size: 30px;
+    }
+}
