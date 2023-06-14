@@ -5,7 +5,7 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <div className="spinach__footer section__padding">
+    <div className="spinach__footer section__padding" id="contacts">
     <div className="spinach__footer-links">
       <div className="spinach__footer-links_logo">
         <img src={spinachLogo} alt="logo" />
