@@ -25,10 +25,16 @@ const CookieConsent = () => {
     <>
       {showPopup && (
         <div className="cookie-consent">
-          <p>This website uses cookies to improve your experience.</p>
+ <p>
+            We use cookies to provide the content and functionality of this website, and subject to your consent, to analyse the use of our website and to ensure you get the best experience. Third parties with whom we collaborate can also install cookies in order to show you personalized advertisements on other websites. Read our
+            <span className="cookie-notice-link" onClick={handleLearnMore}>
+              cookie notice
+            </span>
+            for more information.
+          </p> 
           <div className="cookie-buttons">
-            <button onClick={handleAccept}>Accept</button>
-            <button onClick={handleLearnMore}>About</button>
+            <button onClick={handleAccept}>Accept all</button>
+            <button>Reject all</button>
           </div>
         </div>
       )}
@@ -38,7 +44,6 @@ const CookieConsent = () => {
         onRequestClose={handleCloseModal}
         contentLabel="Cookie Information"
       >
-        {/* Add cookie information content here */}
         <h2>Cookie Information</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
         <button onClick={handleCloseModal}>Close</button>

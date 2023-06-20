@@ -5,28 +5,39 @@
     left: 20px;
     right: 20px;
     padding: 10px;
-    background-color: #f7f7f7;
+    background-color: var(--color-bg);
     border: 1px solid var(--color-subbg);
     border-radius: 4px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     font-size: 16px;
   }
   
   .cookie-consent p {
     margin: 0;
+    padding: 5px;
+    color: #ffffff;
+    margin-bottom: 10px;
   }
-  
+  .cookie-notice-link{
+    margin: 2px;
+    text-decoration: underline;
+  }
   .cookie-consent button {
     padding: 8px 16px;
-    background: var(--gradient-text);
-    color: #fff;
-    border: none;
+    background: var(--color-bg);
+    border: 2px solid var(--color-subbg);
+    color: var(--color-subbg);
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+  }
+  .cookie-consent button:hover{
+    color: #ffffff;
+    border: 2px solid #ffffff;
   }
   
   .cookie-buttons {
@@ -71,7 +82,9 @@
   
   .ReactModal__Content {
     position: relative;
-    background-color: #fff;
+    background-color: var(--color-bg)!important;
+    color: var(--color-bg);
+    border: 2px solid var(--color-subbg)!important;
     border-radius: 4px;
     padding: 20px;
     max-width: 100%;
@@ -82,23 +95,27 @@
   
   .ReactModal__Content h2 {
     margin-top: 0;
+    color: #ffffff;
   }
   
   .ReactModal__Content p {
+    color: #ffffff;
     margin: 0 0 10px;
   }
   
   .ReactModal__Content button {
-    padding: 6px 12px;
-    background: var(--gradient-text);
-    color: #fff;
-    border: none;
+    padding: 8px 16px;
+    background: var(--color-bg);
+    border: 2px solid var(--color-subbg);
+    color: var(--color-subbg);
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
   }
   
   .ReactModal__Content button:hover {
-    background-color: #45a049;
+    color: #ffffff;
+    border: 2px solid #ffffff;
   }
   
   .ReactModal__Content button:focus {

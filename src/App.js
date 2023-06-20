@@ -1,4 +1,5 @@
 import React, { useState }  from 'react'
+import { NavLink, Route, Routes } from 'react-router-dom';
 import {Footer, Blog, Features, About, Header, Games, Careers} from './containers';
 import {Navbar, CookieConsent} from './components';
 import logo from './assets/logo.png'
